@@ -1,18 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>HomePage</title>
-</head>
-<body>
-	<h3>Nothing, really.</h3>
+{% extends 'index/base.html' %}
 
-	<br><br><br>
-	
-	context: <br>
+{% block content_area %}
+
+<h3>Nothing, really.</h3>
+
+<br><br><br>
+<div class="main">
+	<div class="announcements">
+	Announcements: <br>
 	{% for a in announcements %}
 		{{a.title}} <br>
 		{{a.content|linebreaks}} <br>
-		{{a.date_posted|date:"F d"}}
+		{{a.date_posted|date:"F d"}}<br>
+		{{a.author}}
+		<hr>
 	{% endfor%}
-</body>
-</html>
+	</div>
+	<div class="col2">
+
+
+	</div>
+	<div class="col3">
+
+
+	</div>
+</div>
+	{% endblock content_area %}

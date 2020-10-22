@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="EN">
+	<title>HomePage</title>
+</head>
+<body>
+	<!-- css and js are just on separate html files inside every <app>/templates directory for cleaner looks at the code and uniformity -->
+	{% include 'index/css.html' %}
+	{% include 'index/js.html' %}
+
+	{% include 'index/header.html' %}
+
+	{% block content_area %}
+
+	
+	{% endblock content_area %}
+
+	{% include 'index/footer.html' %}
+</body>
+</html>
