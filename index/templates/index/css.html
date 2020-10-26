@@ -1,32 +1,105 @@
 <style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+	*
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		outline: none;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	input[type="checkbox"]
+	{
+		position: fixed;
+		z-index: 1;
+		bottom: 60px;
+		right: 80px;
+		cursor: pointer;
+		-webkit-appearance: none;
+
+	}
+
+	input[type="checkbox"]:before
+	{
+		content: 'Dark';
+		border: 1px solid green;
+		border-radius: 50%;
+		color: #fff;
+		background: #000;
+		padding: 10px 20px;
+		position: absolute;
+	}
+
+	input[type="checkbox"]:checked:before
+	{
+		content: 'Light';
+		border: 1px solid green;
+		border-radius: 50%;
+		color: #000;
+		background: #fff;
+	}
+
+	input[type="checkbox"]:checked ~ *
+	/*add filter: inherit to pictures to retain original colors*/
+	{
+		filter: invert(1);
+	}
+
+	section {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		min-height: 100vh;
+		padding: 80px 100px;
+		background: #fff;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+
+
+
+
+
+
+
+
 	.main {
 		display: flex;
 		justify-content: space-between;
-		
 		min-height: 100vh;
-
+		
 	}
 
 	.announcements {
-		background-color: #a36533;
+		/*background-color: transparent;*/
 		border: 10px;
 		padding: 10px;
+		width: 25%;
+		border: 3px dotted;
+
 	}
 
 	.col2 {
-		background-color: #f2f2f2;
-		margin: 10px;
+		/*background-color: #aa9922;*/
+		margin: 0;
 		padding: 10px;
 		text-align: center;
-		width: 400px;
+		width: 40%;
 
 	}
+
 	.col3 {
-	background-color: #123456;
-	margin: 10px;
+	/*background-color: #123456;*/
+	margin: 0px;
 	padding: 10px;
 	text-align: center;
-	width: 400px;
+	width: 25%;
 	
 	}
 </style>
