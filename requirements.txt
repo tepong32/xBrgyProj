@@ -1,3 +1,4 @@
+dj-database-url==0.5.0
 Django==2.2.15
 django-adminlte3==0.1.6
 django-bootstrap==0.2.4
