@@ -1,0 +1,18 @@
+***Basics:
+# https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
+
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+
+
+
+***Using Postgresql
+
+sudo -i -u django22		# for switching to the user (authed to access brgyproj database)
+psql brgyproj django22	# for interacting with the said database
+
+\q = quit
+\l = list
+\dt = database tables
+\du = database users
+

@@ -1,0 +1,55 @@
+
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+	
+	.header {
+		/*make this a sticky header*/
+		margin: 0;
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 60px;
+		background: #000; /*#07252d*/
+		width: 100%;
+	}
+
+	h3 {
+		position: relative;
+		font-size: 2em;
+		font-weight: 00;
+		letter-spacing: 5px;
+		color: #0e3742;
+		/*text-transform: uppercase;*/
+		width: 100%;
+		text-align: center;
+		-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+		line-height: 0.7em;
+		outline: none;
+		animation: animate 5s linear infinite;
+		font-family: 'Shadows Into Light', cursive;
+
+	}
+	
+	@keyframes animate 
+	{
+		0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+		{
+			color:#0e3742;
+			text-shadow: none;
+		}
+		18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+		{
+			color: #fff;
+			text-shadow: 0 0 10px #03bcf4,
+			0 0 20px #03bcf4,
+			0 0 40px #03bcf4,
+			0 0 80px #03bcf4,
+			0 0 160px #03bcf4,
+		}
+	}
+
+</style>
+<div class="header">
+	<h3><i>theHIDE-OUT</i></h3>
+</div>

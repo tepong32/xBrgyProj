@@ -1,0 +1,6 @@
+A site where every individual living in the community can advertise the product or service he/she is offering.
+
+Users can register as either an Entrepreneur (Entrep) or Service Provider (ServProv).
+Profiles dispayed will vary depending on user type.
+Ratings may need to be applied.
+Contracts for Entrep's confirmed orders and ServProv's accepted jobs.
